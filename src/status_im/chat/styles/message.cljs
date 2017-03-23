@@ -14,7 +14,7 @@
 
 (def style-message-text
   {:fontSize   15
-   :lineHeight 21
+   :lineHeight 22
    :color      text1-color})
 
 (def style-sub-text
