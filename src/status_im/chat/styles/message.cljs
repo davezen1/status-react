@@ -25,12 +25,12 @@
    :height     16})
 
 (defn message-padding-top
-  [{:keys [new-day same-author same-direction]}]
+  [{:keys [first-in-date? same-author same-direction]}]
   (cond
-    new-day        0
+    first-in-date? 20
     same-author    8
     same-direction 16
-    :else          10))
+    :else          24))
 
 (defn last-message-padding
   [{:keys [last-message typing]}]

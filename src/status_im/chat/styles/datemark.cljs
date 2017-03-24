@@ -8,7 +8,7 @@
 (def datemark
   {:opacity          0.5
    :margin-top       20
-   :margin-bottom    10})
+   :height           20})
 
 (def datemark-text
   {:color     st/color-gray4
