@@ -12,10 +12,11 @@
             [status-im.constants :refer [text-content-type
                                          content-type-command]]))
 
-(def style-message-text
-  {:fontSize   15
-   :lineHeight 22
-   :color      text1-color})
+(defstyle style-message-text
+  {:fontSize 15
+   :color    text1-color
+   :android  {:line-height 22}
+   :ios      {:line-height 23}})
 
 (def style-sub-text
   {:top        -2
@@ -35,7 +36,7 @@
 (defn last-message-padding
   [{:keys [last-message typing]}]
   (when (and last-message (not typing))
-    {:paddingBottom 20}))
+    {:paddingBottom 16}))
 
 (def message-datemark
   {:margin-top    10
